@@ -17,9 +17,9 @@ body{background:radial-gradient(ellipse at 82% 1%,#173b702b,transparent 36%),var
 .group-summary{background:radial-gradient(ellipse at 100% 0%,#5d4da223,transparent 60%),linear-gradient(115deg,#18233b88,#1c193044);border-left:2px solid #a798d3}.group-summary h2{font-size:18px}.member-card{box-shadow:0 10px 28px #00000012;border-color:#4a527a65}
 .scope-glyph{width:30px;height:30px;font-size:0;background:url('brand/assets/nexus-mark.svg') center/contain no-repeat;opacity:.8}
 .loading-state{display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;min-height:220px}.loading-state:before{content:'';width:40px;height:40px;background:url('brand/assets/nexus-mark.svg') center/contain no-repeat}.loading-state:has(img):before{display:none}.loading-state strong{letter-spacing:.2em;font-size:15px}.empty-state:before{content:'';display:block;width:45px;height:45px;margin:0 auto 20px;background:url('brand/assets/nexus-mark.svg') center/contain no-repeat}
-.launch-screen{position:fixed;inset:0;z-index:100;pointer-events:none;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#172344,#070b17 60%);animation:nexus-launch 1.2s var(--nexus-ease) forwards}
-.launch-screen>img{width:min(330px,70vw);height:auto;position:relative}.launch-project{font:400 clamp(22px,4vw,40px) var(--nexus-wordmark);letter-spacing:.28em;margin:28px 0 10px;padding-left:.28em;color:#e4e8f5}.launch-screen p{font-size:9px;letter-spacing:.18em;color:#9dacca;max-width:280px;text-align:center;line-height:1.9}.launch-orbit{position:absolute;width:min(650px,95vw);height:230px;border-top:1px solid #7892e855;border-radius:50%;transform:rotate(-17deg);animation:orbit-reveal .9s var(--nexus-ease) both}
-@keyframes nexus-launch{0%,58%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}@keyframes orbit-reveal{from{opacity:0;transform:rotate(-24deg) scale(.92)}to{opacity:1;transform:rotate(-17deg) scale(1)}}
+.launch-screen{position:fixed;inset:0;z-index:100;pointer-events:auto;display:flex;flex-direction:column;align-items:center;justify-content:center;background:radial-gradient(ellipse at center,#172344,#070b17 60%);opacity:0;visibility:hidden}.launch-screen.is-playing{animation:nexus-launch 3.2s var(--nexus-ease) both}.launch-skip{position:absolute;right:24px;bottom:24px;z-index:1;font-size:12px;color:#d4def2;background:#162039;border-color:#7283a9}
+.launch-screen>img{width:min(330px,70vw);height:auto;position:relative}.launch-project{font:400 clamp(22px,4vw,40px) var(--nexus-wordmark);letter-spacing:.28em;margin:28px 0 10px;padding-left:.28em;color:#e4e8f5}.launch-screen p{font-size:9px;letter-spacing:.18em;color:#9dacca;max-width:280px;text-align:center;line-height:1.9}.launch-orbit{position:absolute;width:min(650px,95vw);height:230px;border-top:1px solid #7892e855;border-radius:50%;transform:rotate(-17deg)}.launch-screen.is-playing .launch-orbit{animation:orbit-reveal 1.35s var(--nexus-ease) both}
+@keyframes nexus-launch{0%,68%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}@keyframes orbit-reveal{from{opacity:0;transform:rotate(-24deg) scale(.92)}to{opacity:1;transform:rotate(-17deg) scale(1)}}
 body.no-motion .launch-screen{display:none}
 .academic{--bg:#f4f6fa;--text:#182640;--muted:#4c5d77;--dim:#53627a;--blue:#28548c;--border:#c9d2e2;--nexus-shadow:0 5px 20px #18264005;background:#f4f6fa;color:#182640}
 .academic *, .academic *:before,.academic *:after{animation:none!important;transition:none!important}.academic .launch-screen{display:none}
@@ -56,3 +56,8 @@ body.no-motion .launch-screen{display:none}
 .academic .group-meta{background:#f1eef7;color:#5e4a7f}.academic .stat-box span,.academic .stat-box small{color:#4b607e}
 .academic .fact-list li{color:#3d5577;border-color:#cbd5e5}
 .academic .source-metadata,.academic .source-metadata dt,.academic .source-metadata dd{color:#435b7e}
+
+/* One gentle entrance per workspace route; filtering and nested panels stay still. */
+.animate-in{animation:workspace-arrive .32s var(--nexus-ease) both}
+.detail-content,.equivalence-group{animation:none}
+@keyframes workspace-arrive{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}

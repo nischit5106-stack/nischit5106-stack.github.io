@@ -4,9 +4,9 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;'
 let serial=0;
 class PhantomGraph {
  constructor(container,candidates,{compact=false,onSelect=()=>{}}={}) {
-  this.root=container;this.candidates=candidates;this.compact=compact;this.onSelect=onSelect;this.id='network-'+(++serial);this.zoom=1;this.x=0;this.y=0;this.active=null;this.allRelationships=false;
+  this.root=container;this.candidates=candidates;this.compact=compact;this.onSelect=onSelect;this.id='network-'+(++serial);this.zoom=1;this.x=0;this.y=0;this.active=null;this.allRelationships=false;this.fragment='';this.slot=null;
   this.draw();this.bind();
-  this.observer=new ResizeObserver(()=>{if(!this.root.isConnected){this.observer.disconnect();return;}if(Math.abs(this.root.clientWidth-this.width)>2){this.draw();this.bind();this.transform();}});this.observer.observe(this.root);
+  this.observer=new ResizeObserver(()=>{if(!this.root.isConnected){this.observer.disconnect();return;}if(Math.abs(this.root.clientWidth-this.width)>2){this.draw();this.bind();this.transform();this.focus(this.active,false);this.highlightFragment(this.fragment);this.showSlot(this.slot);}});this.observer.observe(this.root);
  }
  draw(){
   const multi=this.candidates.length>1,W=Math.max(280,this.root.clientWidth),cols=W>=680?4:W>=480?3:2,rows=Math.ceil(this.candidates.length/cols),H=multi?rows*180+35:440,nodes=[],edges=[],labels=[],fragments=[];this.width=this.root.clientWidth;this.W=W;this.H=H;
@@ -38,7 +38,7 @@ class PhantomGraph {
    el.onfocus=()=>this.highlight(el.dataset.node);el.onblur=()=>this.highlight(this.active);
    el.onclick=()=>this.focus(el.dataset.node);el.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();this.focus(el.dataset.node);}if(e.key==='Escape')this.focus(null);};
   });
-  this.root.querySelectorAll('[data-fragment]').forEach(b=>b.onclick=()=>{this.root.querySelectorAll('[data-fragment]').forEach(el=>el.classList.toggle('selected',el===b));this.root.querySelectorAll('[data-node]').forEach(el=>{const n=this.nodes.find(n=>n.key===el.dataset.node);el.classList.toggle('dimmed',!!b.dataset.fragment&&!n.fragments.includes(b.dataset.fragment));});});
+  this.root.querySelectorAll('[data-fragment]').forEach(b=>b.onclick=()=>this.highlightFragment(b.dataset.fragment));
   let drag=null;
   this.svg.onpointerdown=e=>{if(e.target.closest('[data-node]'))return;drag={x:e.clientX,y:e.clientY,ox:this.x,oy:this.y};this.svg.setPointerCapture(e.pointerId);};
   this.svg.onpointermove=e=>{if(!drag)return;const scale=this.W/this.svg.getBoundingClientRect().width;this.x=drag.ox+(e.clientX-drag.x)*scale;this.y=drag.oy+(e.clientY-drag.y)*scale;this.transform();};
@@ -49,8 +49,9 @@ class PhantomGraph {
  transform(){this.frame.setAttribute('transform',`translate(${this.x+this.W/2*(1-this.zoom)} ${this.y+this.H/2*(1-this.zoom)}) scale(${this.zoom})`);}
  highlight(key){this.root.classList.toggle('has-node-focus',!!key);this.root.querySelectorAll('[data-edge]').forEach(el=>el.classList.toggle('edge-focused',!!key&&(el.dataset.a===key||el.dataset.b===key)));this.root.querySelectorAll('[data-node]').forEach(el=>el.classList.toggle('node-focused',el.dataset.node===key));}
  destroy(){this.observer?.disconnect();}
- focus(key){this.root.querySelector('.graph-node-picker select').value=key||'';this.active=key;this.highlight(key);const n=this.nodes.find(n=>n.key===key),out=this.root.querySelector('.graph-inspector');if(!n){out.textContent='Focus view · select a node to reveal its relationships. All relationships remain available in the layer control and source packet.';return;}const relations=this.edges.filter(e=>e.a.key===key||e.b.key===key);out.innerHTML=`<strong>${n.kind==='user'?'User':'Target track'} ${esc(n.id)}</strong><span>${relations.length} displayed relationships · hypothesis ${esc(n.campaign.slice(0,8))} · ${n.fragments.length} fragment membership(s)</span><span>Observed structure only. Cause unresolved.${n.kind==='track'?' Temporal target support: '+esc(n.temporal):''}</span>`;this.onSelect(n);}
- showSlot(slot){this.root.classList.toggle('playback-active',slot!==null);this.root.querySelectorAll('[data-edge]').forEach(el=>{const e=this.edges[+el.dataset.edge];el.classList.toggle('slot-active',slot!==null&&e.kind==='target'&&e.slots.includes(slot));});}
+ highlightFragment(fragment){this.fragment=fragment;this.root.querySelectorAll('[data-fragment]').forEach(el=>el.classList.toggle('selected',el.dataset.fragment===fragment));this.root.querySelectorAll('[data-node]').forEach(el=>{const n=this.nodes.find(n=>n.key===el.dataset.node);el.classList.toggle('dimmed',!!fragment&&!n.fragments.includes(fragment));});}
+ focus(key,notify=true){this.root.querySelector('.graph-node-picker select').value=key||'';this.active=key;this.highlight(key);const n=this.nodes.find(n=>n.key===key),out=this.root.querySelector('.graph-inspector');if(!n){out.textContent='Focus view · select a node to reveal its relationships. All relationships remain available in the layer control and source packet.';return;}const relations=this.edges.filter(e=>e.a.key===key||e.b.key===key);out.innerHTML=`<strong>${n.kind==='user'?'User':'Target track'} ${esc(n.id)}</strong><span>${relations.length} displayed relationships · hypothesis ${esc(n.campaign.slice(0,8))} · ${n.fragments.length} fragment membership(s)</span><span>Observed structure only. Cause unresolved.${n.kind==='track'?' Temporal target support: '+esc(n.temporal):''}</span>`;if(notify)this.onSelect(n);}
+ showSlot(slot){this.slot=slot;this.root.classList.toggle('playback-active',slot!==null);this.root.querySelectorAll('[data-edge]').forEach(el=>{const e=this.edges[+el.dataset.edge];el.classList.toggle('slot-active',slot!==null&&e.kind==='target'&&e.slots.includes(slot));});}
 }
 function containerHTML(el,html){el.innerHTML=html;}
 global.PhantomGraph=PhantomGraph;
