@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="463.28625pt" height="191.808pt" viewBox="0 0 463.28625 191.808" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-21T02:21:20.071442</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 191.808 
+L 463.28625 191.808 
+L 463.28625 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 14.246325 77.985792 
+L 145.487925 77.985792 
+Q 150.844725 77.985792 150.844725 75.856896 
+L 150.844725 30.795264 
+Q 150.844725 28.666368 145.487925 28.666368 
+L 14.246325 28.666368 
+Q 8.889525 28.666368 8.889525 30.795264 
+L 8.889525 75.856896 
+Q 8.889525 77.985792 14.246325 77.985792 
+z
+" clip-path="url(#pc50a556d21)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 14.246325 164.915712 
+L 145.487925 164.915712 
+Q 150.844725 164.915712 150.844725 162.786816 
+L 150.844725 117.725184 
+Q 150.844725 115.596288 145.487925 115.596288 
+L 14.246325 115.596288 
+Q 8.889525 115.596288 8.889525 117.725184 
+L 8.889525 162.786816 
+Q 8.889525 164.915712 14.246325 164.915712 
+z
+" clip-path="url(#pc50a556d21)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 201.734325 125.885952 
+L 301.727925 125.885952 
+Q 307.084725 125.885952 307.084725 123.757056 
+L 307.084725 73.373184 
+Q 307.084725 71.244288 301.727925 71.244288 
+L 201.734325 71.244288 
+Q 196.377525 71.244288 196.377525 73.373184 
+L 196.377525 123.757056 
+Q 196.377525 125.885952 201.734325 125.885952 
+z
+" clip-path="url(#pc50a556d21)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 353.510325 125.885952 
+L 449.039925 125.885952 
+Q 454.396725 125.885952 454.396725 123.757056 
+L 454.396725 73.373184 
+Q 454.396725 71.244288 449.039925 71.244288 
+L 353.510325 71.244288 
+Q 348.153525 71.244288 348.153525 73.373184 
+L 348.153525 123.757056 
+Q 348.153525 125.885952 353.510325 125.885952 
+z
+" clip-path="url(#pc50a556d21)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(26.156812 51.281392)">Intentional coordination</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(24.698531 62.081392)">hidden causal account A</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(38.319469 131.939437)">Recurring external</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(60.827203 143.611312)">stimulus</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(24.689391 154.411313)">hidden causal account B</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(216.615656 96.520432)">Identical visible</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(221.171203 106.310042)">event array X</text>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(361.434656 96.520432)">Same distribution</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(381.175594 106.790979)">of f(X, U)</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 152.82508 56.380369 
+Q 173.611171 73.728038 193.453053 90.287689 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 191.663552 86.189192 
+L 193.453053 90.287689 
+L 189.100554 89.260192 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 152.885021 139.052454 
+Q 173.61068 123.402576 193.354875 108.493798 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 188.957501 109.308111 
+L 193.354875 108.493798 
+L 191.367901 112.500285 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 309.527174 98.56512 
+Q 327.617442 98.56512 344.477874 98.56512 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 340.477874 96.56512 
+L 344.477874 98.56512 
+L 340.477874 100.56512 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="231.643125" y="181.05984" transform="rotate(-0 231.643125 181.05984)">The distinction requires additional provenance or assumptions, not a stronger score on the same X.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pc50a556d21">
+   <rect x="8.443125" y="7.2" width="446.4" height="177.408"/>
+  </clipPath>
+ </defs>
+</svg>

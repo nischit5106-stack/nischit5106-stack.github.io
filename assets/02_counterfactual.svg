@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="460.8pt" height="186.707469pt" viewBox="0 0 460.8 186.707469" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-21T02:21:19.063549</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 186.707469 
+L 460.8 186.707469 
+L 460.8 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 13.0032 123.895656 
+L 121.9248 123.895656 
+Q 127.2816 123.895656 127.2816 121.833288 
+L 127.2816 64.430712 
+Q 127.2816 62.368344 121.9248 62.368344 
+L 13.0032 62.368344 
+Q 7.6464 62.368344 7.6464 64.430712 
+L 7.6464 121.833288 
+Q 7.6464 123.895656 13.0032 123.895656 
+z
+" clip-path="url(#pbcb35887f7)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 187.0992 77.492376 
+L 304.9488 77.492376 
+Q 310.3056 77.492376 310.3056 75.430008 
+L 310.3056 30.057912 
+Q 310.3056 27.995544 304.9488 27.995544 
+L 187.0992 27.995544 
+Q 181.7424 27.995544 181.7424 30.057912 
+L 181.7424 75.430008 
+Q 181.7424 77.492376 187.0992 77.492376 
+z
+" clip-path="url(#pbcb35887f7)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 187.0992 159.987096 
+L 304.9488 159.987096 
+Q 310.3056 159.987096 310.3056 157.924728 
+L 310.3056 112.552632 
+Q 310.3056 110.490264 304.9488 110.490264 
+L 187.0992 110.490264 
+Q 181.7424 110.490264 181.7424 112.552632 
+L 181.7424 157.924728 
+Q 181.7424 159.987096 187.0992 159.987096 
+z
+" clip-path="url(#pbcb35887f7)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 347.8032 123.895656 
+L 443.3328 123.895656 
+Q 448.6896 123.895656 448.6896 121.833288 
+L 448.6896 64.430712 
+Q 448.6896 62.368344 443.3328 62.368344 
+L 347.8032 62.368344 
+Q 342.4464 62.368344 342.4464 64.430712 
+L 342.4464 121.833288 
+Q 342.4464 123.895656 347.8032 123.895656 
+z
+" clip-path="url(#pbcb35887f7)" style="fill: #f3f6f8; stroke: #285f8c; stroke-linejoin: miter"/>
+   </g>
+   <g id="text_1">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(19.100953 84.815438)">One observed history</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(27.716344 96.028172)">fixed actors, rows</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(45.056812 107.287312)">and times</text>
+   </g>
+   <g id="text_2">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(223.127438 45.160757)">Treatment</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(203.034234 55.227397)">align selected item</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(217.506656 66.027397)">assignments</text>
+   </g>
+   <g id="text_3">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(209.639391 127.793993)">Matched control</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(216.767672 138.593993)">collision-safe</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(215.331187 148.522118)">reassignment</text>
+   </g>
+   <g id="patch_6">
+    <path d="M 129.483738 81.862551 
+Q 154.512312 68.21155 178.461199 55.149428 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 173.991908 55.308915 
+L 178.461199 55.149428 
+L 175.907214 58.820553 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 129.437965 104.486206 
+Q 154.513971 119.772121 178.539866 134.417907 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 176.165419 130.628184 
+L 178.539866 134.417907 
+L 174.083419 134.043631 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="text_4">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(375.154875 79.335984)">Compare</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(375.147844 90.827859)">structure</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(360.176906 101.015438)">synthetic labels</text>
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(363.330422 111.815438)">shared history</text>
+   </g>
+   <g id="patch_8">
+    <path d="M 312.172884 55.009955 
+Q 326.375536 69.07058 339.704202 82.26596 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 338.268687 78.030479 
+L 339.704202 82.26596 
+L 335.454508 80.873084 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 312.134739 134.653037 
+Q 326.375605 119.771332 339.766187 105.778175 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+    <path d="M 335.555685 107.285382 
+L 339.766187 105.778175 
+L 338.445652 110.050901 
+" style="fill: none; stroke: #637080; stroke-width: 1.1; stroke-linecap: round"/>
+   </g>
+   <g id="text_5">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: middle" x="230.4" y="177.34536" transform="rotate(-0 230.4 177.34536)">Preserve each actor's item multiset and timestamp multiset; check semantic duplicates.</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pbcb35887f7">
+   <rect x="7.2" y="7.2" width="446.4" height="171.864"/>
+  </clipPath>
+ </defs>
+</svg>

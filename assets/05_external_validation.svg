@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="583.4875pt" height="267.868125pt" viewBox="0 0 583.4875 267.868125" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-10-21T02:21:19.571701</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.11.2, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 267.868125 
+L 583.4875 267.868125 
+L 583.4875 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 115.4875 191.818125 
+L 345.8875 191.818125 
+L 345.8875 51.418125 
+L 115.4875 51.418125 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 115.4875 191.818125 
+L 115.4875 51.418125 
+" clip-path="url(#p6119609f0e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m140adbc095" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m140adbc095" x="115.4875" y="191.818125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="115.4875" y="206.415781" transform="rotate(-0 115.4875 206.415781)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 166.6875 191.818125 
+L 166.6875 51.418125 
+" clip-path="url(#p6119609f0e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m140adbc095" x="166.6875" y="191.818125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="166.6875" y="206.415781" transform="rotate(-0 166.6875 206.415781)">100</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 217.8875 191.818125 
+L 217.8875 51.418125 
+" clip-path="url(#p6119609f0e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m140adbc095" x="217.8875" y="191.818125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="217.8875" y="206.415781" transform="rotate(-0 217.8875 206.415781)">200</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 269.0875 191.818125 
+L 269.0875 51.418125 
+" clip-path="url(#p6119609f0e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m140adbc095" x="269.0875" y="191.818125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="269.0875" y="206.415781" transform="rotate(-0 269.0875 206.415781)">300</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 320.2875 191.818125 
+L 320.2875 51.418125 
+" clip-path="url(#p6119609f0e)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.15; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m140adbc095" x="320.2875" y="191.818125" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="320.2875" y="206.415781" transform="rotate(-0 320.2875 206.415781)">400</text>
+     </g>
+    </g>
+    <g id="text_6">
+     <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: middle" x="230.6875" y="220.416562" transform="rotate(-0 230.6875 220.416562)">Number of benchmark worlds</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_11">
+      <defs>
+       <path id="m94bb7a2f7a" d="M 0 0 
+L -3.5 0 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m94bb7a2f7a" x="115.4875" y="79.07267" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="108.4875" y="82.871889" transform="rotate(-0 108.4875 82.871889)">Treatment detection</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m94bb7a2f7a" x="115.4875" y="164.16358" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: end" x="108.4875" y="167.962798" transform="rotate(-0 108.4875 167.962798)">Control alerts</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_3">
+    <path d="M 115.4875 57.799943 
+L 309.0235 57.799943 
+L 309.0235 100.345398 
+L 115.4875 100.345398 
+z
+" clip-path="url(#p6119609f0e)" style="fill: #285f8c"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 115.4875 142.890852 
+L 115.4875 142.890852 
+L 115.4875 185.436307 
+L 115.4875 185.436307 
+z
+" clip-path="url(#p6119609f0e)" style="fill: #637080"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 115.4875 191.818125 
+L 345.8875 191.818125 
+" style="fill: none; stroke: #000000; stroke-width: 0.8; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_9">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="312.6075" y="81.670327" transform="rotate(-0 312.6075 81.670327)">378/378</text>
+   </g>
+   <g id="text_10">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; text-anchor: start" x="119.0715" y="166.761236" transform="rotate(-0 119.0715 166.761236)">0/378</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="text_11">
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(390.0091 65.0675)">42 disjoint listener groups</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(390.0091 83.526094)">4,032 listeners</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(390.0091 101.0675)">378 matched pairs</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(390.0091 120.03625)">756 worlds</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(390.0091 137.947969)">AUC = 1.000</text>
+    <text style="font-size: 10px; font-family: 'DejaVu Sans'; fill: #172b42" transform="translate(390.0091 155.0675)">Worst-group control alerts = 0%</text>
+   </g>
+  </g>
+  <g id="text_12">
+   <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="294.0475" y="16.318125" transform="rotate(-0 294.0475 16.318125)">Controlled external-population benchmark</text>
+  </g>
+  <g id="text_13">
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(17.5675 245.601562)">Real histories with synthetic interventions and labels.</text>
+   <text style="font-size: 9px; font-family: 'DejaVu Sans'" transform="translate(17.5675 257.301562)">Repeated worlds share source groups; these counts do not measure fraud accuracy.</text>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="p6119609f0e">
+   <rect x="115.4875" y="51.418125" width="230.4" height="140.4"/>
+  </clipPath>
+ </defs>
+</svg>

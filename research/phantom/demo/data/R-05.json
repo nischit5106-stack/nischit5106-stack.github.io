@@ -1,0 +1,61 @@
+{
+  "ambiguity_equivalence_sets": [],
+  "candidates": [],
+  "contract_versions": {
+    "equivalence": "9.2_v1",
+    "evidence": "9.2_additive_v1",
+    "guard": "guard_vNext_2",
+    "priority": "9.1_equivalence_v1",
+    "tiers": "9.2_v1",
+    "workflow": "9.2_v1"
+  },
+  "core_result_ref": {
+    "location": "immutable accepted prediction",
+    "sha256": "935d44e4f4ad6d110e28c1056c2feedb289b2130ab28fb05c8b2b641a473abb5"
+  },
+  "detector_lineage": {
+    "detector_sha256": "f54c006865d1524ab1ee4e82b0dff81839a5aa927f1e12100207606f9994526f",
+    "draw_count": 511,
+    "method": "burst_schedule/consensus/pooled_fragment_link",
+    "pooling_sha256": "502267217e01ed904ec1ed7e12088d6b6a062d555819f3fd4cc8c5929a764979",
+    "seed": 55101
+  },
+  "evidence_cutoff": 1653782400,
+  "input_provenance": {
+    "event_sha256": "f51672c9a849d40be97585d31f6c85e06361e554d6d5bc650d1c8110d60a1aec",
+    "raw_multiplicity": {
+      "atoms": 704,
+      "source_rows": 704,
+      "sum": 704
+    },
+    "semantic_presence_hash": "4fc528c550055d923d6d4ac6e34bb1a20ea4be5ad6df0c2f61384534f342bb9b",
+    "source": "Fully synthetic offline Phase8/9 development"
+  },
+  "observation_window": [
+    1651363200,
+    1653782400
+  ],
+  "presentation_contract": "Independent structural review queues. Complete equivalence sets; equal priority within sets; ID order is presentation only. No causal preference. Equivalence is relative to the declared review representation, not full event identity or common hidden cause.",
+  "priority_groups": {
+    "A": [],
+    "B": [],
+    "C": [],
+    "D": []
+  },
+  "queue_counts": {
+    "A": 0,
+    "B": 0,
+    "C": 0,
+    "D": 0
+  },
+  "run_id": "d146adc5dae187b89e1b00f07fbded34d707885e8873c85327c3bc8223ff41b9",
+  "run_outcome": "NO_ADMITTED_CAMPAIGN",
+  "run_support": {
+    "assessment": "RESTRICTED_CONDITIONAL_ONLY",
+    "reason": "No candidate status inferred for an empty run; absent result does not clear accounts."
+  },
+  "schema_version": "PHANTOM_Phase9_2_Run_v1",
+  "warnings": [
+    "Attribution withheld; relevant exposed population unknown; fixed historical window only."
+  ]
+}
