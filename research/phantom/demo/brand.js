@@ -24,7 +24,7 @@ function startIntro(){
  if(launchStarted||!launch?.isConnected)return;launchStarted=true;if(introSuppressed()){dismissIntro();return;}
  launch.classList.add('is-playing');launchFallback=setTimeout(dismissIntro,4200);
  launch.addEventListener('animationend',event=>{if(event.target===launch&&event.animationName==='nexus-launch')dismissIntro();});
- document.addEventListener('keydown',skipIntro);document.addEventListener('focusin',leaveIntro);launch.addEventListener('pointerdown',pressIntro,{once:true});document.getElementById('skip-intro').addEventListener('click',pressIntro);
+ document.addEventListener('keydown',skipIntro);document.addEventListener('focusin',leaveIntro);launch.addEventListener('pointerdown',pressIntro,{once:true});
 }
 if(introSuppressed())dismissIntro();else document.addEventListener('phantom:ready',startIntro,{once:true});
 document.addEventListener('phantom:motionchange',event=>{if(event.detail.paused)dismissIntro();});
