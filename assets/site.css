@@ -140,5 +140,37 @@ button.coming-note:hover{color:#faf5e9;border-color:#bdb4a3}button.coming-note:f
 @media(prefers-reduced-motion:reduce){.orbit-preview,.orbit-preview *,.orbit-preview::backdrop{animation:none!important}}
 @media print{.orbit-preview{display:none!important}}
 
+/* The demo's 3.2-second identity entrance, scoped to each project's own palette. */
+.project-launch{position:fixed;inset:0;z-index:100;display:grid;place-items:center;overflow:hidden;isolation:isolate;background:radial-gradient(ellipse at center,#172344,#070b17 60%);color:#e4e8f5}
+.project-launch[hidden]{display:none!important}
+.project-launch.is-playing{animation:project-launch-exit 3.2s cubic-bezier(.22,.61,.36,1) both}
+.project-launch-visual{position:relative;display:flex;flex-direction:column;align-items:center;text-align:center;max-width:100%;padding:30px 20px;isolation:isolate}
+.project-launch.is-playing .project-launch-visual{animation:project-launch-arrive 1.35s cubic-bezier(.22,.61,.36,1) both}
+.project-launch-brand{font:400 clamp(34px,6vw,56px)/1.1 Arial,Helvetica,sans-serif;letter-spacing:.22em;text-indent:.22em;position:relative}
+.project-launch-brand small{display:block;font-size:10px;line-height:1.6;letter-spacing:.28em;text-indent:.28em;text-transform:uppercase;margin-top:12px}
+.project-launch-name{font:400 clamp(25px,4vw,42px)/1.2 Arial,Helvetica,sans-serif;letter-spacing:.28em;text-indent:.28em;margin:38px 0 17px;position:relative}
+.project-launch p{font:400 10px/1.9 Arial,Helvetica,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#b8c5df!important;max-width:280px;margin:0}
+.project-launch-orbit{position:absolute;z-index:-1;width:min(650px,95vw);height:230px;left:50%;top:50%;border-top:1px solid #7892e888;border-radius:50%;transform:translate(-50%,-50%) rotate(-17deg)}
+.project-launch-veritas{background:radial-gradient(ellipse at center,#292823,#101113 65%);color:#ece9e1}
+.project-launch-veritas .project-launch-name{background:linear-gradient(112deg,#c8b99b,#f2f0e8 45%,#b4b6bd 65%,#fff);background-clip:text;-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.project-launch-veritas p{color:#c7bead!important}
+.project-launch-frame{position:absolute;z-index:-1;width:310px;height:310px;left:50%;top:50%;transform:translate(-50%,-50%) rotate(45deg);border:1px solid #c8b99b40;box-shadow:0 0 65px #c8b99b0c}
+.project-launch-frame:after{content:'';position:absolute;inset:24px;border:1px solid #e7e6e126}
+.project-launch-orbit-theme{background:#fff;color:#292a2d}
+.project-launch-orbit-theme .orbit-ellipse{width:min(650px,95vw);left:50%;top:50%;transform:translate(-50%,-50%) rotate(-24deg);z-index:-1}
+.project-launch-orbit-theme p{color:#292a2d!important}
+.veritas-preview .project-launch,.orbit-preview .project-launch{position:absolute;z-index:2;min-height:100%}
+.veritas-close,.orbit-back{position:relative;z-index:4}
+.orbit-back{background:#090a0b}
+.project-has-intro .veritas-reveal,.project-has-intro .veritas-reveal *,.project-has-intro .orbit-scene,.project-has-intro .orbit-title-block{animation:none!important}
+.veritas-preview.project-has-intro[open]:not(.is-leaving),.orbit-preview.project-has-intro[open]:not(.is-leaving),.veritas-preview.project-has-intro[open]:not(.is-leaving)::backdrop,.orbit-preview.project-has-intro[open]:not(.is-leaving)::backdrop{animation:none}
+html:has(.veritas-preview[open],.orbit-preview[open]){overflow:hidden}
+@keyframes project-launch-exit{0%,68%{opacity:1;visibility:visible}100%{opacity:0;visibility:hidden}}
+@keyframes project-launch-arrive{from{opacity:0;transform:scale(.94) translateY(6px)}to{opacity:1;transform:scale(1) translateY(0)}}
+@media(max-width:760px){.project-launch-brand{font-size:38px}.project-launch-brand small{font-size:9px;letter-spacing:.2em;text-indent:.2em}.project-launch-name{font-size:28px;letter-spacing:.2em;text-indent:.2em;margin-top:32px}.project-launch p{font-size:9px;max-width:230px}.project-launch-orbit{height:170px}.project-launch-frame{width:230px;height:230px}}
+.motion-paused .project-launch{display:none!important}
+@media(prefers-reduced-motion:reduce){.project-launch{display:none!important}.project-launch *{animation:none!important}}
+@media print{.project-launch{display:none!important}}
+
 /* Center the visible lockup, accounting for its original SVG right-side padding. */
 @media(max-width:760px){.nexus-page .site-launch-visual>img{transform:translateX(11.2%)}}
