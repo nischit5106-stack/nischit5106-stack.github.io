@@ -180,3 +180,37 @@ html:has(.veritas-preview[open],.orbit-preview[open]){overflow:hidden}
 
 /* Shared publication footer spacing. */
 .release-rights{padding:24px;max-width:1200px;margin:0 auto}
+
+/* Author-requested release polish: clear hierarchy, consistent rhythm and touch targets. */
+@media screen {
+  h1,h2,.project-copy h3 { text-wrap:balance; }
+  header nav a { min-height:44px; display:inline-flex; align-items:center; }
+  .paper-list { margin:32px 0 0; }
+  .paper-list a[href$=".pdf"] { position:relative; padding:24px 84px 24px 24px; border:1px solid var(--line); margin-top:12px; border-radius:4px; background:rgba(255,255,255,.015); font-size:18px; line-height:1.4; transition:background .18s,border-color .18s; }
+  .paper-list a[href$=".pdf"]:after { content:"PDF ↗"; position:absolute; right:24px; top:27px; font-size:11px; letter-spacing:.09em; color:#b8c7dd; }
+  .paper-list a[href*="Technical_Report"] { border-color:#7080aa; background:linear-gradient(110deg,#b7c9ff12,transparent 88%); }
+  .paper-list a[href$=".pdf"]:hover { background:#b7c9ff12; border-color:#a3b5db; color:#f5f7ff; }
+  .paper-list a[href$=".pdf"] span { margin-top:9px; font-size:13px; line-height:1.6; max-width:62ch; }
+  .paper-list + .status { margin-top:26px; padding-left:18px; border-left:1px solid #67738c; line-height:1.8; max-width:76ch; }
+  .subhero:has(.paper-list a[href$=".pdf"]) h1 { font-size:clamp(44px,5.3vw,72px); }
+  .release-rights { max-width:1280px!important; padding:28px 48px!important; }
+  .release-rights p { line-height:1.8; }
+  .release-rights p:last-child { margin-bottom:0; }
+  @media(max-width:760px) {
+    header { padding-top:16px; padding-bottom:12px; gap:10px; }
+    header nav { padding-top:4px; }
+    header nav a { padding-top:6px; padding-bottom:6px; }
+    .phantom-hero { padding-top:32px; }
+    .phantom-hero .back { margin-bottom:22px; }
+    .phantom-hero .eyebrow { margin-bottom:22px; }
+    .phantom-hero h1 { margin-bottom:18px; }
+    .phantom-hero .actions { margin-top:24px; }
+    .paper-list { margin-top:26px; }
+    .paper-list a[href$=".pdf"] { padding:20px 65px 20px 18px; font-size:17px; }
+    .paper-list a[href$=".pdf"]:after { right:16px; top:25px; font-size:10px; }
+    .paper-list a[href$=".pdf"] span { font-size:12px; }
+    .release-rights { padding:24px!important; }
+  }
+  @media(prefers-reduced-motion:reduce) { .paper-list a[href$=".pdf"] { transition:none; } }
+  .motion-paused .paper-list a[href$=".pdf"] { transition:none; }
+}
